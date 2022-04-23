@@ -17,12 +17,12 @@ def logic(x1, y1, z1):
 
 a = (True, False)
 i = 0
-massiv = []
+massiv = [] #задаём пустой массив
 print('X      Y      Z      F')
 for x in a:
     for y in a:
         for z in a:
-            massiv.append(logic(x, y, z))
+            massiv.append(logic(x, y, z)) # добавляем в массив значения
             print (x,' ', y,' ', z,' ', massiv[i])
             i=i+1
 
