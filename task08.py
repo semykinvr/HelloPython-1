@@ -2,11 +2,11 @@
 
 # функция генерирует рандомное ВЕЩЕСТВЕННОЕ ЧИСЛО:
 import random
-def N_N(): return random.uniform(-10, 10)
+def Get_random_float(): return random.uniform(-10, 10)
 
 
-x = round(float(N_N()), 2)
-y = round(float(N_N()), 2)
+x = round(float(Get_random_float()), 2)
+y = round(float(Get_random_float()), 2)
 #x = 0.0
 #y = 0.0
 print(f'Задана координата X: {x}')
