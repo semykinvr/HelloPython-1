@@ -4,7 +4,7 @@
 def Input_int():
     while True:
         try:
-            console_input = int(input("Введите число: "))
+            console_input = int(input("Введите целое число: "))
             return int(console_input)
         except ValueError:
             print("Неверный ввод.")
