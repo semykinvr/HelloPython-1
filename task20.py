@@ -7,7 +7,8 @@ print (f'Cписок: {spisok}')
 # функция генерирует рандомное ЦЕЛОЕ ЧИСЛО:
 import random
 def Get_random_int(): return random.randint(1, 9)
-n = Get_random_int()
+# n = Get_random_int()
+n = 45
 print(f'ищем число {n} в этом списке.')
 
 count = False
