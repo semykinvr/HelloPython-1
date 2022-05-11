@@ -17,6 +17,7 @@ print(spisok)
 pos=input(f'Введите, через запятую, позиции элементов которые необходимо перемножить, не более {n*2}: ').split(',')
 print(type(pos))
 print('введены вот эти позиции:', pos)
+# запись в файл
 with open('positions.txt', 'w') as positions:
     for i in pos:
         positions.write(f'{i}\n') 
