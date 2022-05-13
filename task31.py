@@ -17,6 +17,7 @@ for i in range(2,n):
         #print(spisok)
         n=n/i
         #print(n)
+    if n == 1: break
         
 if len(spisok) == 0:
     print(f"Число является простым")
