@@ -6,8 +6,8 @@ spisok_slov = text.split(' ') # разделяем строку на слова
 
 # 1 ВАРИАНТ 
 spisok_slov2 = list(filter(lambda x: 'абв' not in x, spisok_slov)) # фильбром удаляем слова содержащие 'абв'
-spisok_slov3 = " ".join(spisok_slov2) # слепляем слова обратно в строку с разделителем пробелом
-print('Отредактированный список1: ', spisok_slov3)
+text1 = " ".join(spisok_slov2) # слепляем слова обратно в строку с разделителем пробелом
+print('Отредактированный список1: ', text1)
 
 
 # 2 ВАРИАНТ
@@ -15,13 +15,13 @@ spisok_slov4 = []
 for i in spisok_slov:
     if 'абв' not in i:
             spisok_slov4.append(i) # создаём новый список без слов содержащих 'абв'
-spisok_slov5 = ' '.join(spisok_slov4)   # слепляем слова обратно в строку с разделителем пробелом
-print('Отредактированный список2:', spisok_slov5)
+text2 = ' '.join(spisok_slov4)   # слепляем слова обратно в строку с разделителем пробелом
+print('Отредактированный список2:', text2)
 
 # 3 ВАРИАНТ
 spisok_slov6 = []
 for i in spisok_slov:
     if i.find('абв') == -1:
             spisok_slov6.append(i) # создаём новый список без слов содержащих 'абв'
-spisok_slov7 = ' '.join(spisok_slov6)   # слепляем слова обратно в строку с разделителем пробелом
-print('Отредактированный список3:', spisok_slov7)
+text3 = ' '.join(spisok_slov6)   # слепляем слова обратно в строку с разделителем пробелом
+print('Отредактированный список3:', text3)
