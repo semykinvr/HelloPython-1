@@ -1,8 +1,19 @@
 # 14. Подсчитать сумму цифр в вещественном числе
 
 # ВАРИАНТ (короткий код): 
-spisok = list(map(int, str(input('Введите число: ')).replace('.', ''))) 
+import os
+import random
+os.system("cls")
+
+# задаем случайное вещественное число из диапазона
+n = round(random.uniform(1, 1001), 4)
+print('Задано число:', n, '\n') 
+
+spisok = list(map(int, str(n).replace('.', ''))) 
 print('Сумма цифр данного числа равна:', sum(spisok), '\n')
+
+
+
 
 
 
