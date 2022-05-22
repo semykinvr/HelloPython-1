@@ -40,3 +40,30 @@ print(spisok) # возвращает кортеджи (ИНДЕКС, name)
 # filter(f, [1, 2, 3, 4, 5])
 # возвращает список с чётными числами
 #           [   2,    4   ]
+
+############################################################
+# как проверить при вводе int(input()) что ввели цифру а не букву: 
+# https://metanit.com/python/tutorial/2.11.php
+# 1 вариант:
+# n = input('Введите число N: ')
+# while n.isdigit() != True:
+#     n = input('Вы ввели что-то не то. Повторите ввод: ')
+# if n.isdigit() == True:
+#     n=int(n)
+
+# 2 вариант
+# def isdigit(value):
+#     try:
+#         int(value)
+#         return True
+#     except ValueError:
+#         return False
+
+# while True:
+#     a = input('Введите число: \n')
+#     if isdigit(a):
+#         b = int(a)
+#         break
+#     else:
+#         print('Некорректный ввод. Повторите')
+############################################################
